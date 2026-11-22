@@ -2,7 +2,7 @@
 
 A simple web app to check if a number is prime.
 If the number is not prime, it shows the smallest number that can divide it.
-For example, 77 is not prime because 7 can divide it.
+For example, '77 is not prime because 7 can divide it'.
 
 Demo: https://akmalprimo-js.vercel.app
 
