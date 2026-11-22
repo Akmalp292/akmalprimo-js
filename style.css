@@ -142,9 +142,10 @@ input {
 }
 
 .tool__mascot {
-  width: 84px;
+  width: 100px;
   height: 84px;
   object-fit: contain;
+  object-position: right bottom;
   flex-shrink: 0;
 }
 
