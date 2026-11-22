@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Check whether a number is prime and see its smallest factor."
+    />
+    <title>AkmalPrimo – Prime Number Checker</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <img src="logo.png" alt="" class="header__logo" />
+        <div>
+          <h1 class="header__title">AkmalPrimo</h1>
+          <p class="header__subtitle">Prime number checker</p>
+        </div>
+      </header>
+
+      <section class="tool">
+        <div class="tool__input">
+          <label for="number" class="tool__label">Number</label>
+          <div class="input-wrap">
+            <input
+              id="number"
+              class="input"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              placeholder="Enter a whole number"
+            />
+            <button type="button" id="clear" class="clear" aria-label="Clear input" hidden>
+              ×
+            </button>
+          </div>
+        </div>
+
+        <div class="tool__result" aria-live="polite">
+          <img id="mascot" src="logo.png" alt="" class="tool__mascot" />
+          <div class="tool__text">
+            <p class="tool__label">Result</p>
+            <p id="idle" class="detail">Enter a number to see the result.</p>
+            <p id="error" class="error" hidden></p>
+            <div id="done" hidden>
+              <p id="answer" class="answer"></p>
+              <p id="detail" class="detail"></p>
+              <button type="button" id="copy" class="copy">Copy result</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">How to use</h2>
+        <ol class="steps">
+          <li><strong>Enter a number.</strong> Whole numbers only, 0 or greater.</li>
+          <li><strong>Read the result.</strong> It updates while you type.</li>
+          <li>
+            <strong>Copy it if needed.</strong> The result and the reason are copied as
+            two lines.
+          </li>
+        </ol>
+        <p class="note">
+          This method involves division by 2, 3, followed by divisions with divisors in
+          the form of 6k - 1 and 6k + 1 till the square root of that number. The first
+          divisor encountered is the smallest factor. Larger numbers are tested using the
+          Miller-Rabin test.
+        </p>
+        <p class="note">
+          Example: 77 → not divisible by 2 or 3 → try 5 (no), 7 (yes) → 77 = 7 × 11, so it
+          is not prime.
+        </p>
+      </section>
+
+      <footer class="footer">Made by Akmal</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
