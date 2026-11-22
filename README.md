@@ -51,7 +51,7 @@ In each loop, I check `i` and `i + 2`.
 
 ## Tools
 
-Only HTML, CSS and JavaScript. No library, no npm, no build step.
+No library, no npm, no build step.
 
 - `index.html` - the page
 - `style.css` - the design
